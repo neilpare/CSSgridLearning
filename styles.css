@@ -1,3 +1,6 @@
+/* Setup part */
+/* Just styling the page */
+
 body {
     margin: 0;
     padding: 0;
@@ -25,6 +28,8 @@ h1 {
     background-color: #fff;
 }
 
+/* Without main styled the Grid would appear stretched */
+
 main {
     width: 100vw;
     display: flex;
@@ -39,6 +44,9 @@ main section {
     background: #313131;
 }
 
+/* Why you're here */
+/* The grid container is there just to make the content display as a grid */
+
 #grid {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -46,12 +54,20 @@ main section {
     padding: 15px;
 }
 
+/* Using flex here let us manage the box content very nicely */
+
 #grid .box {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #171717;
 } 
+
+/* 
+    This is the witchcraft part - you can decide the 2D layout with grid.
+    This means for example that the box-1 <div> is shaped down here as you wish.
+
+*/
 
 #grid #box-1 {
     grid-row: 1/2;
